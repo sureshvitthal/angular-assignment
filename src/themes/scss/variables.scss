@@ -1,0 +1,429 @@
+@import "./mixins.scss";
+
+/* Toast component colors */
+
+$toast-color-content : #fff;
+
+$toast-color-success : #bcdb53;
+$toast-color-success-icon : #8fb01e;
+$toast-color-success-heading : #bad06b;
+
+$toast-color-warning : #f4db04;
+$toast-color-warning-icon : #bba10e;
+$toast-color-warning-heading : #e3e11a;
+
+$toast-color-error : #f25b5d;
+$toast-color-error-icon : #d1161a;
+$toast-color-error-heading : #d0686c;
+
+$toast-color-info : #c7d3e5;
+$toast-color-info-icon : #183980;
+$toast-color-info-heading : #183980;
+
+$toast-color-desc : #333333;
+$toast-color-desc-span : #999999;
+
+
+$border-color-common:#595959;
+$font-blue-common:#30506D;
+
+$font-blue-common-button: #437099;
+$font-blue-common-button-hover: #30506D;
+$font-grey-common-button: #DBDBDB;
+
+
+//$toast-height : 100px;
+
+.toast-height{ height:100px;}
+.toast-height-mobile{ height:75px;}
+$toast-height: 100px;
+$toast-height-mobile: 75px;
+
+/* General colors */
+
+$color-lightblue : #418ac1;
+$color-darkblue : #30506D;
+$color-darkblue-hover : #16436E;
+$color-fontblue :#337ab7;
+$color-dark-grey : #6D6D6D;
+$color-white : #ffffff;
+$color-black : #000000;
+$color-orange : #F77B2E;
+$color-red : #E30000;
+$color-rust: #C85108;
+$color-grey : #dfdfdf;
+$background-green :#00a651;
+$background-light-green :#5cb85c;
+$background-grey :#dfdfdf;
+$background-white :#ffffff;
+$background-dark-grey :#a8a4a4;
+$background-light-grey :#f6f6f6;
+$place-holder-grey: #6F7072;
+$email-dynamic-value: #0D8AFC;
+$field-disable: #E5E5E5;
+
+/* General fonts */
+
+$font-sm: 10px;
+$font-md-1: 12px;
+$font-md-2: 13px;
+$font-md-3: 14px;
+$font-lg-1: 15px;
+$font-lg-2: 16px;
+$font-lg-3: 17px;
+$font-xl-1: 18px;
+$font-xl-2: 19px;
+$font-xl-3: 20px;
+
+.font-color-lightblue
+{
+    color: $color-fontblue;
+    font-size: $font-md-2;
+    font-weight: normal;
+}
+
+.font-color-lightblue-lg
+{
+    color: $color-fontblue;
+    font-size: $font-lg-1;
+    font-weight: bold;
+}
+
+.font-color-darkblue
+{
+    color: $color-darkblue;
+}
+
+.font-color-grey
+{
+    color: $color-grey;
+    font-size: $font-md-2;
+    font-weight: normal;
+}
+
+.font-base { font-size:100% !important; }
+.font-display1{ font-size:56px; font-weight: 300;}
+.font-display2{ font-size:40px; font-weight: 300;}
+.font-display4{ font-size:100px; font-weight: 300;}
+.font-headline{ font-size:30px; }
+.font-title{ font-size:22px; }
+.font-subheading{ font-size:18px; font-weight: 600;}
+.font-subheading2{ font-size:18px; }
+.font-menu{ font-size:16px; }
+.font-menu2{ font-size:16px; font-weight: 600;}
+.font-breadcrumb{ font-size:14px; font-weight: 600;}
+.font-error-msg{ font-size:14px; color: #FF0000; }
+.font-field-label-regular{ font-size:14px;}
+.font-field-label{ font-size:12px; font-weight: 600;}
+.font-placeholder{ font-size:16px; }
+.font-button{ font-size:16px; font-weight: 600; text-transform: uppercase;}
+.font-body-text1-large{ font-size:16px; }
+.font-body-text2-large{ font-size:16px; font-weight: 600;}
+.font-body-text1{ font-size:14px; }
+.font-body-text2{ font-size:14px; font-weight: 300;}
+.font-body-text3{ font-size:14px; font-weight: 600;}
+.font-body-text4{ font-size:20px; font-weight: 600;}
+.font-list{ font-size:14px; font-weight: 600;}
+.font-regular { font-size: 16px };
+
+/* Margins and Paddings */
+
+.margin0{margin: 0px;}
+.marginb10{margin-bottom: 10px;}
+.margin-bottom-large{margin-bottom: 25px;}
+.margin-bottom-medium{margin-bottom: 15px;}
+.margin-top5{margin-top: 5px;}
+.margin-top10{margin-top: 10px;}
+.margin-top-medium{margin-top: 15px;}
+.margin-top-large{margin-top: 25px;}
+.padding-medium-all{padding:10px;}
+.padding-bottom-medium{padding-bottom: 15px;}
+.padding-only-bottom-small{padding: 0 0 10px 0;}
+
+.padding0{padding: 0px;}
+.padding5{padding: 5px;}
+.padding10{padding: 10px;}
+.padding15{padding: 15px;}
+.padding20{padding: 20px;}
+.dividergap10{margin: 10px; clear: both;}
+.dividergapmedium{margin: 18px; clear: both;}
+.padding-top-medium{padding-top: 8px;}
+.padding-right-medium{padding-right: 8px;}
+.padding-top-lg{padding-top: 15px;}
+.padding-top-lg2{padding-top: 25px;}
+.padding-top-xl{padding-top: 25px;}
+
+ /* Floats */
+
+.clearboth
+{clear: both;}
+
+.float-left
+{float: left;}
+
+.float-right
+{float: right;}
+
+/* Text Aligns */
+
+.text-right{text-align:right;}
+.text-left{text-align:left;}
+.text-center{text-align:center;}
+.text-justify{text-align: justify;}
+
+ /* Backgrounds */
+
+.BackgroundNone { background: none;}
+.BlueshadeBackground { background: #59738a;}
+.BlueshadeLightBackground { background: #eaedf0;}
+
+.Background-darkgrey { background: $color-dark-grey;}
+.Backgroundgrey{ background: $color-grey; }
+.bg-dark-blue { background: $color-darkblue; }
+.bg-dark-blue-hover { background-color: $color-darkblue-hover; color: $color-orange;}
+.blue-bg-white-font { background: $color-darkblue !important; color: $color-white !important; }
+.orange-bg-white-font { background: $color-orange; color: $color-white; }
+.light-background { background: #F6F7F7; }
+.input-background { background: #F5F5F5;}
+
+/* Font colors */
+
+.ColourBlue{color:#183980}
+.anchor-white {color: $color-white;}
+.anchor-black {color: $color-black;}
+
+/* Heights and Widths */
+
+.overflow-x {
+  overflow-x: hidden;
+}
+.display-block {
+  display: block !important;
+}
+.row-eq-height {
+    display: table-cell;
+    float: none;
+    padding: 10px;
+  }
+
+.widthreg
+{
+    width:20%;
+    display: table-cell;
+}
+
+.widthmed
+{ width:25%;}
+
+hr
+{
+    border-top: 1px solid $color-grey;
+    padding-bottom: 40px;
+}
+
+.dotted-hr
+{
+    border-top: 1px dotted $color-grey;
+    margin-top: 40px;
+}
+/* Icons */
+
+.default-icon-white
+{
+    color: $color-white;
+}
+
+.default-icon-size
+{
+    font-size: 18px;
+}
+
+.default-icon-white-normal
+{
+    @extend .default-icon-white;
+    @extend .default-icon-size;
+}
+.icon-red
+{
+    color: $color-rust;
+}
+.edit-icon-style a
+{
+    color: $font-blue-common;
+}
+
+.icon-font-style
+{
+    font-size:14px;
+}
+
+
+/* Panels */
+
+.panel-basic
+{
+    -moz-box-shadow:    0px 1px 2px 0px #666666;
+    -webkit-box-shadow: 0px 1px 2px 0px #666666;
+    box-shadow:         0px 1px 2px 0px #666666;
+    @include margin(10px, 0px, 0px, 0px);
+    border:1px solid $border-color-common;
+}
+
+.panel-basic-header
+{
+    @include padding(10px, 10px, 10px, 10px);
+    height:40px;
+}
+
+.panel-basic-container
+{
+    width:95%;
+    @include margin(10px, 10px, 10px, 18px);
+}
+
+.panel-full-container
+{
+    width:100%;
+    @include margin(0px, 10px, 10px, 0px);
+}
+
+.panel-fullscreen
+{
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 90%;
+    height: 70%;
+    right: 2.9%;
+    left: 2.9%;
+    bottom: 0;
+    overflow: auto;
+}
+
+.panel-side-tab
+{
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    width: 4%;
+    right: 7%;
+    border: 1px solid red;
+    height: 100%;
+    background: #ffffff;
+    float:right;
+
+}
+
+.vaf-document-side-tab-text
+{
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: left top;
+    -o-transform: rotate(-90deg);
+    -o-transform-origin: left top;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    position: absolute;
+    top: 8%;
+    left: 5px;
+}
+
+/* Headings */
+
+.blue-heading
+{
+  @extend .font-subheading;
+    color: $color-darkblue;
+    border-bottom:1px solid $color-darkblue;
+
+}
+
+.blue-heading-title
+{
+  @extend .font-title;
+    color: $color-darkblue;
+    border-bottom:1px solid $color-darkblue;
+
+}
+
+.heading-border-grey-fixed
+{
+    @extend .font-body-text3-user;
+    @extend .border-bottom-dark-grey;
+    padding: 1% 0;
+}
+
+.heading-border-only-grey-fixed
+{
+    @extend .border-bottom-dark-grey;
+    padding: 1% 0;
+}
+
+.heading-border-grey
+{
+    @extend .font-body-text3-user;
+    @extend .border-bottom-dark-grey;
+    margin: 2% 0 2% 0;
+    padding: 1% 0;
+}
+
+/* Form labels */
+
+.form-label-style
+{
+  @extend .font-field-label;
+    color: $color-dark-grey;
+    @include margin(26px, 0px, 4px, 0px);
+
+}
+
+.form-value-style
+{
+  @extend .font-body-text1-large;
+    color: $color-black;
+
+}
+
+
+/* Scroll styles */
+
+.scrollbar-default
+{
+    float: left;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    margin-top:10px;
+    width: 100%;
+}
+
+
+
+.text-ellipsis
+{
+    text-overflow: ellipsis;
+    width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2px;
+    left: 40px;
+}
+
+
+.div-seperator
+{
+    margin-top: 60px;
+}
+
+
+.text-ellipsis-default
+{
+    text-overflow: ellipsis;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+}
+
+$color-blue-font: #025E8A;

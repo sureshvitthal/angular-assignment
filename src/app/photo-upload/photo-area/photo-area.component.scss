@@ -1,0 +1,23 @@
+@import "~themes/scss/style.scss";
+
+.photo-area-main
+{
+    border:1px solid grey;
+    padding:20px;
+    .seperator
+    {
+        margin-top:30px;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+    .custom-file-upload {
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        font-weight: normal;
+        border-radius: 3px;
+    }
+
+}

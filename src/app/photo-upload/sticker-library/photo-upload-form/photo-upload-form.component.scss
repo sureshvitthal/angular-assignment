@@ -1,0 +1,23 @@
+@import "~themes/scss/style.scss";
+
+
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: normal;
+    border-radius: 3px;
+}
+
+.sticker-input
+{
+    margin-top:10px;
+    input
+    {
+        padding:5px;
+    }
+}

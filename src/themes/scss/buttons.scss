@@ -1,0 +1,320 @@
+@import "./mixins.scss";
+
+.btn:focus, .btn:active, .btn:active:focus
+{
+    outline: 0;
+}
+
+.ButtonDefaultStyle
+{
+    display: block;
+    margin: 30px auto;
+    background: none;
+    border-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ButtonStyleRectBlue
+{
+    @extend .ButtonDefaultStyle;
+    border: 1px solid $color-darkblue;
+    color: $color-darkblue;
+}
+
+.ButtonStyleRectOrange
+{
+    @extend .ButtonDefaultStyle;
+    background: $color-orange;
+    color: $color-white;
+    margin-right: 5px;
+}
+
+.btn-add-visa
+{
+    @extend .ButtonDefaultStyle;
+    border: 1px solid $color-dark-grey;
+}
+
+.btn-tiny-rounded
+{
+    @include border-radius(30px);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.btn-small-orange
+{
+    @include border-radius(5px);
+    @extend .orange-bg-white-font;
+    width:80px;
+    @include margin(0px, 14px, 0px, 24px);
+}
+
+
+
+.qc-button-style-active
+{
+    width:132px;
+    @extend .font-body-text2-large;
+}
+
+.qc-button-style
+{
+    width:112px;
+    @extend .font-body-text1-large;
+}
+
+.btn-transparent
+{
+    display: block;
+    text-align: center;
+}
+.btn-border-green
+{
+    border:1px solid;
+    @extend .btn-transparent;
+    @include border-radius(2px);
+}
+
+.btn-border-orange
+{
+    border:1px solid;
+    @extend .btn-transparent;
+    @include border-radius(2px);
+}
+
+.btn-primary-default
+{
+    @extend .font-button;
+    color:#ffffff;
+    width:200px;
+    height:40px;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    @include border-radius(4px);
+}
+
+.btn-primary-default-small
+{
+    @include border-radius(4px);
+    width:80px;
+    @include margin(0px, 14px, 0px, 24px);
+    color:#FFFFFF;
+}
+
+.btn-primary-normal
+{
+    @extend .btn-primary-default;
+    background: $font-blue-common-button;
+}
+
+.btn-primary-normal:hover
+{
+    @extend .btn-primary-default;
+    background: $font-blue-common-button-hover;
+}
+
+.btn-primary-disabled
+{
+    @extend .btn-primary-default;
+    background: $font-grey-common-button;
+    color: #000000;
+}
+
+.btn-small-blue
+{
+    @extend .btn-primary-default-small;
+    background: $font-blue-common-button;
+}
+
+.btn-small-blue:hover
+{
+    @extend .btn-primary-default-small;
+    background: $font-blue-common-button-hover;
+}
+
+
+/* Buttons Responsive */
+
+.btn-primary-default-rounded
+{
+    @extend .font-button-user;
+    color:#ffffff;
+    min-width:40%;
+    height:2.78%;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    @include border-radius(20px);
+    padding: 5px 35px 5px 35px;
+}
+
+.btn-primary-responsive-rounded
+{
+    @extend .font-body-text1-user;
+    height:2.78%;
+    vertical-align: middle;
+    text-align: center;
+    //display: table-cell;
+    @include border-radius(20px);
+}
+
+.btn-primary-normal-rounded
+{
+    @extend .btn-primary-default-rounded;
+    background: $font-blue-common-button;
+}
+
+.btn-primary-normal-rounded:hover
+{
+    @extend .btn-primary-default-rounded;
+    background: $font-blue-common-button-hover;
+}
+
+.btn-primary-default-rounded:focus
+{
+    color:#ffffff;
+    outline: 0;
+}
+
+.btn-primary-disabled-rounded
+{
+    @extend .btn-primary-default-rounded;
+    //background: $font-grey-common-button;
+    color: #000000;
+}
+
+.btn-primary-disabled-rounded:focus
+{
+    color:#000000;
+    outline: 0;
+}
+
+.btn-primary-transparent-rounded
+{
+    @extend .btn-primary-responsive-rounded;
+    border:1px solid #000000;
+    background: #FFFFFF;
+    padding:8px 20px;
+}
+
+.btn-primary-transparent-rounded:hover
+{
+    @extend .btn-primary-responsive-rounded;
+    color:#025E8A;
+    border:1px solid #025E8A;
+    background: #EFF5FF;
+    padding:8px 20px;
+}
+
+.btn-transparent-rounded-color {
+    color: #025E8A;
+    border: 1px solid #025E8A;
+    background: #EFF5FF;
+    padding: 8px 20px;
+}
+
+.btn-transparent-rounded-color:focus
+{
+    color: #025E8A;
+}
+
+.btn-primary-1 {
+  @extend .font-button;
+  color: $color-white;
+  background: $font-blue-common-button;
+  &.active,
+  &:active {
+      box-shadow: none;
+  }
+  &:hover,
+  &:focus {
+      color: $color-white;
+      background: $font-blue-common-button-hover;
+  }
+  &:disabled {
+      background: $font-grey-common-button;
+      color: $color-black;
+  }
+}
+.btn-primary-2 {
+  @extend .font-button;
+  background: $font-grey-common-button;
+  &.active,
+  &:active {
+      box-shadow: none;
+  }
+}
+.btn-link {
+  color: $font-blue-common-button-hover;
+  text-decoration: none !important;
+
+  &:hover {
+      color: $font-blue-common-button;
+  }
+}
+.btn {
+  span {
+      vertical-align: middle;
+  }
+  span + span {
+      vertical-align: middle;
+  }
+}
+.btn:focus{
+  outline: 0;
+}
+
+
+.border-radius-40PLR {
+  border-radius: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.border-radius-20PLR {
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.btn-primary-bluetransparent-rounded
+{
+    @extend .btn-primary-responsive-rounded;
+    border:1px solid $font-blue-common;
+    background: $font-blue-common;
+    padding:8px 20px;
+    color:#FFFFFF;
+}
+
+.btn-primary-bluetransparent-rounded:hover, .btn-primary-bluetransparent-rounded:active, .btn-primary-bluetransparent-rounded:focus
+{
+    color:#FFFFFF;
+}
+
+.btn-primary-whitetransparent-rounded
+{
+    @extend .btn-primary-responsive-rounded;
+    color:#000000;
+    border:1px solid #025E8A;
+    background: #fafafa;
+    padding:8px 20px;
+}
+
+.btn-secondary-whitetransparent-rounded
+{
+    @extend .btn-primary-responsive-rounded;
+    color:#000000;
+    border:1px solid #025E8A;
+    background: #fafafa;
+    padding:8px 20px;
+}
+
+.btn-secondary-whitetransparent-rounded:hover
+{
+    background: #003259;
+    color: #EFEFEF;
+}
+

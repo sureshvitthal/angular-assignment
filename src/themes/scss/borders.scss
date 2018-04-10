@@ -1,0 +1,64 @@
+/* Borders */
+
+.BorderLeftBlue
+{
+    border-left:1px solid $color-lightblue;
+}
+
+.BorderLeftGrey
+{
+    border-left:1px solid $color-grey;
+}
+
+.BorderRightGrey
+{
+    border-right:1px solid $color-grey;
+}
+
+.BorderRightWhite
+{
+    border-right:1px solid $color-white;
+}
+
+.BorderLeftWhite
+{
+    border-left:1px solid $color-white;
+}
+
+.border-bottom-dark-blue
+{
+    border-bottom:3px solid $color-darkblue !important;
+}
+
+.border-color-common-1px
+{
+    border:1px solid $border-color-common;
+}
+
+.border-color-common-top-1px
+{
+    border-top:1px solid $border-color-common;
+}
+
+.border-tabs
+{
+    border-bottom:1px solid $border-color-common;
+    border-left:1px solid $border-color-common;
+    border-right:1px solid $border-color-common;
+}
+
+.border-bottom-dark-grey
+{
+    border-bottom:1px solid $color-grey !important;
+}
+
+.border-right-grey-dotted
+{
+    border-right:2px dotted $color-grey !important;
+}
+
+.BorderRightBottomGrey
+{
+    border-right:1px solid $color-grey;
+    border-bottom:1px solid $color-grey;
+}

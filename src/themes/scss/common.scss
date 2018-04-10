@@ -1,0 +1,48 @@
+.country-selector-container
+{
+ @extend .float-right;
+}
+
+.breadcrumb
+{
+ @extend .BackgroundNone;
+ margin-bottom: 0;
+}
+
+.breadcrumb-item
+{
+  color: $color-dark-grey;
+  a
+  {
+   color: $color-dark-grey;
+  }
+  &.active
+  {
+    color: $color-darkblue;
+  }
+}
+
+.vfs-page-header
+{
+  h3
+  {
+    font-size: $font-xl-1;
+    color: $color-darkblue;
+    margin:0;
+    padding: 15px;
+  }
+}
+
+
+/* Icons */
+
+.qc-icons-default img
+{
+  width:20px;
+  height: 20px;
+  color: #ffffff;
+  fill:#ffffff;
+}
+
+/* Layouts */
+

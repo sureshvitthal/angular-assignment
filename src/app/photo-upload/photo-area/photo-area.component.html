@@ -1,0 +1,19 @@
+<div class="photo-area-main">
+  <div>
+    <button class="btn btn-transparent-rounded-color">START OVER</button>
+  </div>
+  <div class="clearfix seperator"></div>
+  <div>
+      <label for="file-upload" class="custom-file-upload btn-transparent-rounded-color">
+          UPLOAD IMAGE
+      </label>
+      <input id="file-upload"
+             multiple="false"  
+             accept=".jpg,.png,.PNG,.JPG"
+             type="file" 
+             (change)="onImageSelect($event)"/>
+  </div>
+  <div>
+    <app-image-holder [image]="selectedFile"></app-image-holder>
+  </div>
+</div>
