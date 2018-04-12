@@ -1,11 +1,12 @@
 <div class="sticker-images">
-  <div>
-    <img src="" alt="uploaded sticker" />
-  </div>
-  <div>
-    <img src="" alt="uploaded sticker" />
-  </div>
-  <div>
-    <img src="" alt="uploaded sticker" />
+  <div *ngFor="let sticker of stickers; let i = index">
+    <!-- <div>
+      <img [src]="getBase64DAta(sticker.sticker)" alt="img" /> {{ sticker.sticker_name}}
+    </div> -->
+    <ul>
+      <li>{{i+1}}. {{ sticker.sticker_name}}</li>
+    </ul>
   </div>
 </div>
+
+    

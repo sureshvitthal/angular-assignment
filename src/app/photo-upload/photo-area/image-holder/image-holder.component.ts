@@ -9,7 +9,7 @@ import { OnChanges } from '@angular/core/src/metadata/lifecycle_hooks';
 export class ImageHolderComponent implements OnInit, OnChanges {
 
   @Input('image') image;
-  public base64Data: any;
+  public base64Data = '';
   constructor() { }
 
   ngOnInit() {
@@ -28,7 +28,7 @@ export class ImageHolderComponent implements OnInit, OnChanges {
       self.base64Data =  reader.result;
     };
     reader.onerror = function (error) {
-      console.log('Error: ', error);
+      console.log('Error: ', error); 
     };
  }
 

@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StickerLibraryComponent implements OnInit {
 
+  public example: string;
+  public stickers =[];
+
   constructor() { }
 
+
   ngOnInit() {
+  }
+
+  onStickerCreate(emittedData){
+    // console.log('DATA', emittedData);
+    this.stickers = emittedData;
   }
 
 }

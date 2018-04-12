@@ -1,3 +1,9 @@
 <div class="image-holder">
-  <img [src]="base64Data" alt=" uploaded image" />
-</div>
+  <div *ngIf="base64Data === ''; else image">
+    <p>Please Upload an Image</p>
+  </div>
+  <ng-template #image>
+    <img [src]="base64Data" alt=" uploaded image" />
+  </ng-template>
+</div> 
+  

@@ -9,7 +9,7 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 export class PhotoAreaComponent implements OnInit {
   public selectedFile: any;
   public fileSizeLimit=  2;
-  constructor(public sanitizer: DomSanitizer) { }
+  //constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
   }
@@ -18,12 +18,12 @@ export class PhotoAreaComponent implements OnInit {
     const files = event.dataTransfer ? event.dataTransfer.files : event.target.files;
     for (let i = 0; i < files.length; i++) {
       const fileSizeInMB = +(files[i].size / (1024 * 1024)).toFixed(2);
-      // files[i]['fileName'] = files[i]['name'];
+      //files[i]['fileName'] = files[i]['name'];
       const file = files[i];     
 
       if (this.validate(file)) {
         if (this.isValidType(file)) {
-          // to avoid XSS(cross side scripting)
+          // to avoid XSS(cross side scripting)           
           if (this.fileSizeLimit >= fileSizeInMB) {
             //file.objectURL = this.sanitizer.bypassSecurityTrustUrl((window.URL.createObjectURL(files[i])));         
             this.selectedFile = file;         
@@ -46,4 +46,14 @@ export class PhotoAreaComponent implements OnInit {
     const acceptFileTypes = /^image\/(jpe?g|JPE?G|png|PNG)$|^application\/(pdf)$/i;
     return acceptFileTypes.test(file.type);
   }
+
+
+  resetAll()
+  {
+    alert('1');
+  }
+
+
 }
+
+
