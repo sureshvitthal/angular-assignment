@@ -9,6 +9,8 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 export class PhotoAreaComponent implements OnInit {
   public selectedFile: any;
   public fileSizeLimit=  2;
+  //public testdatatochild:string = 'Test Message';
+  public childevent:string;
   //constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
@@ -26,7 +28,8 @@ export class PhotoAreaComponent implements OnInit {
           // to avoid XSS(cross side scripting)           
           if (this.fileSizeLimit >= fileSizeInMB) {
             //file.objectURL = this.sanitizer.bypassSecurityTrustUrl((window.URL.createObjectURL(files[i])));         
-            this.selectedFile = file;         
+            this.selectedFile = file;    
+            console.log(this.selectedFile);     
           } else {           
             alert("You can Upload image of size 2 MB or less than !!!");
           }
@@ -47,10 +50,19 @@ export class PhotoAreaComponent implements OnInit {
     return acceptFileTypes.test(file.type);
   }
 
+  public reset: any[] = [{}];
 
-  resetAll()
+  public resetAll() 
   {
-    alert('1');
+    //var imgpath = this.selectedFile.name;
+    //this.selectedFile = {};
+   // this.selectedFile.reset();
+  }
+
+
+  onchildtoparent(emittedData)
+  {
+    this.childevent = emittedData;
   }
 
 

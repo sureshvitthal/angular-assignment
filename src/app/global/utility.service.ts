@@ -14,8 +14,8 @@ export class UtilityService{
          return reader.result;
         };
         
-        reader.onerror = function (error) {
-          console.log('Error: ', error); 
-        };       
+        // reader.onerror = function (error) {
+        //   console.log('Error: ', error); 
+        // };       
     }
 }

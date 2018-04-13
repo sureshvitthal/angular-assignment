@@ -4,12 +4,9 @@
           UPLOAD NEW STICKER
       </button>
   </div>
-
   <div>
     <app-sticker [stickers]="stickers"></app-sticker>
   </div>
-
-
   <div>
     <app-photo-upload-form (stickerName)="onStickerCreate($event)"></app-photo-upload-form>
   </div>

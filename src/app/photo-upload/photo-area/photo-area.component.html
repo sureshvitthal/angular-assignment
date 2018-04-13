@@ -14,6 +14,9 @@
              (change)="onImageSelect($event)"/>
   </div>
   <div>
-    <app-image-holder [image]="selectedFile"></app-image-holder>
+    <app-image-holder [image]="selectedFile" [testdata]="testdatatochild" (childtoparent)="onchildtoparent($event)"></app-image-holder>
   </div>
 </div>
+
+  
+  

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { OnChanges } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Component({
@@ -9,6 +9,17 @@ import { OnChanges } from '@angular/core/src/metadata/lifecycle_hooks';
 export class ImageHolderComponent implements OnInit, OnChanges {
 
   @Input('image') image;
+  @Input() 
+  testdata: string;
+
+  
+  //@Output('childtoparent') childtoparent = new EventEmitter<any>();
+  //childtoparent.emit('Test Message');
+
+  // @Output() value: EventEmitter<any> = new EventEmitter();
+  // this.value.emit({ message: 'data'});
+
+
   public base64Data = '';
   constructor() { }
 
@@ -23,10 +34,12 @@ export class ImageHolderComponent implements OnInit, OnChanges {
   private getBase64(file) {
     var reader = new FileReader();
     var self = this;
-    reader.readAsDataURL(file);
-    reader.onload = function () {      
-      self.base64Data =  reader.result;
-    };
+  
+      //debugger;
+      reader.readAsDataURL(file);
+      reader.onload = function () {      
+        self.base64Data =  reader.result;
+      };
     reader.onerror = function (error) {
       console.log('Error: ', error); 
     };
